@@ -33,7 +33,7 @@ def login_page():
                     "Emp ID": user.iloc[0]["Emp ID"],
                     "Emp Name": user.iloc[0]["Emp Name"],
                     "Login Name": user.iloc[0]["Login Name"],
-                    "Team Lead Name": user.iloc[0]["Team Lead Name"]
+                    "'Team Lead'": user.iloc[0]["'Team Lead'"]
                 }
                 st.experimental_rerun()
             else:
@@ -46,7 +46,7 @@ def form_page():
     today = datetime.today().strftime('%Y-%m-%d')
     emp_id = st.session_state.user_info["Emp ID"]
     emp_name = st.session_state.user_info["Emp Name"]
-    team_lead = st.session_state.user_info["Team Lead Name"]
+    team_lead = st.session_state.user_info'Team Lead'"]
     login_names = login_data["Login Name"].unique()
 
     with st.form("coder_form"):
