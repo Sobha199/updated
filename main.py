@@ -46,7 +46,7 @@ def form_page():
     today = datetime.today().strftime('%Y-%m-%d')
     emp_id = st.session_state.user_info["Emp ID"]
     emp_name = st.session_state.user_info["Emp Name"]
-    team_lead = st.session_state.user_info'Team Lead'"]
+    team_lead = st.session_state.user_info["Team Lead Name"]
     login_names = login_data["Login Name"].unique()
 
     with st.form("coder_form"):
