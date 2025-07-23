@@ -33,7 +33,7 @@ def login_page():
                     "Emp ID": user.iloc[0]["Emp ID"],
                     "Emp Name": user.iloc[0]["Emp Name"],
                     "Login Name": user.iloc[0]["Login Name"],
-                    "'Team Lead'": user.iloc[0]["'Team Lead'"]
+                   "Team Lead": user.iloc[0]["Team Lead"]
                 }
                 st.experimental_rerun()
             else:
